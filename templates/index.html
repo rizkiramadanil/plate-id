@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <!-- CSS -->
+
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="/static/css/fontawesome.min.css" />
+    <!-- FONTAWESOME -->
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- AOS -->
+
+    <!-- LOGO -->
+    <link rel="icon" href="/static/img/logo-icon.png" type="image/x-icon" />
+    <!-- LOGO -->
+
+    <title>Plate ID - Website</title>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="container flex-row">
+        <div class="header__logo">
+          <a href="#home">
+            <img src="/static/img/logo-brand.png" alt="logo" />
+          </a>
+        </div>
+        <nav>
+          <ul class="header__menu flex-row">
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="right flex-center">
+          <a href="#detection" class="btn btn-secondary">Start Detection</a>
+          <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- HEADER -->
+
+    <!-- HOME -->
+    <section id="home" class="container flex-row">
+      <div class="home__wrapper">
+        <h1 class="home__title">Welcome everyone👋</h1>
+        <p class="home__text">
+          Mengimplementasikan YOLOv8 dan EasyOCR dalam pengenalan karakter pada
+          plat nomor kendaraan Indonesia.
+        </p>
+        <a href="#detection" class="btn btn-primary">Get Started</a>
+      </div>
+      <div class="home__img">
+        <img src="/static/img/home.png" alt="illustration" />
+      </div>
+    </section>
+    <!-- HOME -->
+
+    <!-- ABOUT -->
+    <section
+      id="about"
+      style="
+        background: url(/static/img/about-bg.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100% 80%;
+      "
+    >
+      <div class="container flex-center flex-column">
+        <div class="text-center" data-aos="fade-up">
+          <h5 class="section-subheading">about</h5>
+          <h2 class="section-heading">About This Website</h2>
+        </div>
+        <div class="about__illustration" data-aos="fade-up">
+          <h1 class="about__title">Further Applications</h1>
+          <p class="about__text">
+            Sistem pada website ini masih dapat dikembangkan lebih lanjut.
+          </p>
+          <div class="about__illustration-wrapper text-center">
+            <div class="about__illustration-content">
+              <div class="about__illustration-img">
+                <img src="/static/img/illustration1.png" alt="illustration" />
+              </div>
+              <h3 class="about__illustration-title">Parkir Otomatis</h3>
+              <p class="about__illustration-text">
+                Mempermudah identifikasi kendaraan yang masuk atau keluar dari
+                area parkir.
+              </p>
+            </div>
+            <div class="about__illustration-content">
+              <div class="about__illustration-img">
+                <img src="/static/img/illustration2.png" alt="illustration" />
+              </div>
+              <h3 class="about__illustration-title">Pemantauan Lalu Lintas</h3>
+              <p class="about__illustration-text">
+                Mempermudah identifikasi kendaraan yang mengalami kecelakaan
+                lalu lintas.
+              </p>
+            </div>
+            <div class="about__illustration-content">
+              <div class="about__illustration-img">
+                <img src="/static/img/illustration3.png" alt="illustration" />
+              </div>
+              <h3 class="about__illustration-title">Penegakan Hukum</h3>
+              <p class="about__illustration-text">
+                Mempermudah identifikasi pemilik kendaraan yang melanggar hukum.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__detail">
+          <div class="about__detail-content flex-center">
+            <div class="about__detail-wrapper" data-aos="fade-right">
+              <h1 class="about__title">Identifying Lisence Plate</h1>
+              <p class="about__text">
+                Website ini mengimplementasikan YOLOv8 untuk melakukan deteksi
+                plat nomor kendaraan dan EasyOCR untuk mengenali
+                karakter-karakter pada plat nomor kendaraan tersebut. Pengguna
+                dapat mengunggah video kendaraan yang memiliki plat nomor, dan
+                website ini akan mendeteksi plat nomor kendaraan pada video
+                tersebut.
+              </p>
+            </div>
+            <div class="about__detail-img" data-aos="fade-left">
+              <img src="/static/img/about.png" alt="illustration" />
+            </div>
+          </div>
+        </div>
+
+        <section id="profile">
+          <div class="about__profile" data-aos="zoom-in">
+            <h1 class="about__title">Developer Profile</h1>
+            <div class="about__profile-content flex-center">
+              <div class="about__profile-img">
+                <img src="/static/img/profile.png" alt="profile" />
+              </div>
+              <div class="about__profile-wrapper">
+                <p class="about__text">
+                  Saya mahasiswa dari Program Studi D4 Teknologi Rekayasa
+                  Perangkat Lunak Jurusan Teknologi Informasi Politeknik Negeri
+                  Padang. Website ini dibuat sebagai hasil dari penelitian
+                  proyek akhir yang berjudul “Implementasi You Only Look Once
+                  (YOLO) dan Easy Optical Character Recognition (EasyOCR) dalam
+                  Pengenalan Karakter pada Plat Nomor Kendaraan Indonesia”.
+                </p>
+                <div class="about__profile-developer">
+                  <h3>Rizki Ramadanil</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <!-- ABOUT -->
+
+    <!-- DETECTION -->
+    <section id="detection">
+      <div class="container">
+        <div data-aos="fade-right">
+          <h5 class="section-subheading">detection</h5>
+          <h2 class="section-heading">Start License Plate Detection</h2>
+        </div>
+        <div
+          class="detection"
+          style="
+            background: url(/static/img/detection-bg.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+          "
+        >
+          <div class="detection__content flex-column">
+            <p class="detection__text">
+              Anda dapat memulai proses deteksi dengan mengunggah file video.
+              Sebelum mengunggah, pastikan video tersebut berkualitas baik.
+            </p>
+            <div class="detection__upload flex-row">
+              <div class="detection__box text-center">
+                <h3 class="detection__box-title">Upload Video</h3>
+                <p class="detection__box-text">(.mp4)</p>
+                <form
+                  action="/upload"
+                  method="post"
+                  enctype="multipart/form-data"
+                  class="detection__form"
+                  onsubmit="return checkFile()"
+                >
+                  <input
+                    type="file"
+                    name="file"
+                    accept="video/mp4"
+                    id="fileInput"
+                  />
+                  <input type="submit" class="btn" value="Submit" />
+                </form>
+              </div>
+              <div class="detection__img">
+                <img src="/static/img/detection.png" alt="illustration" />
+              </div>
+            </div>
+            <section id="result">
+              <div class="detection__result">
+                <div class="detection__result-header flex-row">
+                  <h1 class="detection__result-title">Detection Result</h1>
+                  <a
+                    href="{{ url_for('download_file') }}"
+                    class="btn"
+                    onclick="showDownloadAlert()"
+                    >Download CSV</a
+                  >
+                </div>
+                <video controls>
+                  <source src="/results/result.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- DETECTION -->
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer__box flex-column">
+        <p>Copyright &copy; 2023 - All Rights Reserved</p>
+        <p>
+          Made with <span style="font-weight: 600">Flask</span> by
+          <span class="footer__link"
+            ><a href="#profile">Rizki Ramadanil</a></span
+          >
+        </p>
+      </div>
+    </footer>
+    <!-- FOOTER -->
+
+    <!-- SCRIPTS -->
+    <script src="/static/js/script.js"></script>
+    <!-- SCRIPTS -->
+
+    <!-- FONTAWESOME -->
+    <script src="/static/js/fontawesome.min.js"></script>
+    <!-- FONTAWESOME -->
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- AOS -->
+
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+      function showDownloadAlert() {
+        alert("📄 File akan didownload. Tekan tombol OK untuk melanjutkan.");
+      }
+
+      function checkFile() {
+        var fileInput = document.getElementById("fileInput");
+        var errorMessage = "";
+
+        if (fileInput.files.length === 0) {
+          errorMessage =
+            "⚠️ Oops! Sepertinya belum ada file video yang dipilih. Harap pilih file terlebih dahulu untuk memulai proses deteksi.";
+          alert(errorMessage);
+          return false;
+        }
+        alert(
+          "🚀 Proses deteksi akan dimulai setelah tombol OK ditekan. Biarkan proses deteksi berjalan dengan baik."
+        );
+
+        return true;
+      }
+    </script>
+
+    {% with messages = get_flashed_messages(with_categories=true) %} {% if
+    messages %}
+    <script>
+      var alertMessage =
+        "{% for category, message in messages %}{{ message }}{% endfor %}";
+      alert(alertMessage);
+    </script>
+    {% endif %} {% endwith %}
+  </body>
+</html>
